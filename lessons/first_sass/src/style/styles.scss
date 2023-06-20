@@ -18,14 +18,29 @@ $colors: (
 
 .section{
 	background-color: #303960;
-	.section__content{
+	&__content{
 		background-color: map-get($map: $colors, $key: color-tertiary);
-		.section__content--para{
+		&--para{
 			background-color: #ea9a96;
 		}
+		&--title{
+			padding: 10rem;
+		}
 	}
-
 }
+
+
+
+// .section{
+// 	background-color: #303960;
+// 	.section__content{
+// 		background-color: map-get($map: $colors, $key: color-tertiary);
+// 		.section__content--para{
+// 			background-color: #ea9a96;
+// 		}
+// 	}
+
+// }
 // section{
 // 	background-color: map-get($map: $colors, $key: color-primary );
 // 	h2{
