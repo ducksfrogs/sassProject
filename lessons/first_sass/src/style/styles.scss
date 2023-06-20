@@ -1,0 +1,66 @@
+/* variables */
+
+// :root {
+// 	--color-primary: yellowgreen;
+// }
+
+/* sass variables */
+
+$colors: (
+	'color-primary': #303960,
+	'color-secondary': #ea9a96,
+	'color-tertiary': #f8b24f,
+	'color-white': #fff,
+	);
+
+
+/* sample code */
+
+.section{
+	background-color: #303960;
+	.section__content{
+		background-color: map-get($map: $colors, $key: color-tertiary);
+		.section__content--para{
+			background-color: #ea9a96;
+		}
+	}
+
+}
+// section{
+// 	background-color: map-get($map: $colors, $key: color-primary );
+// 	h2{
+// 		color: map-get($map: $colors, $key: color-secondary );
+// 	}
+
+// 	p{
+// 		color: map-get($map: $colors, $key: color-white );
+// 	}
+// }
+
+
+
+// section{
+// 	background-color: map-get($map: $colors, $key: color-primary );
+// }
+
+// h2{
+// 	color: map-get($map: $colors , $key: color-secondary );
+// }
+
+// p{
+// 	color: map-get($map: $colors, $key: color-white );
+// }
+
+// body{
+// 	// background-color: var(--color-primary);
+// 	background-color: $color-primary;
+// }
+
+// h1{
+// 	color: white;
+// }
+
+// h2{
+// 	color: blue;
+
+// }
