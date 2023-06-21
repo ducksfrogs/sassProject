@@ -1,3 +1,6 @@
 // import rule
 
-@use 'reset';
+// @use './reset';
+@import './reset.scss';
+@import './lesson-10-functions';
+@import './mixins';

@@ -1,1 +1,18 @@
-@use 'reset';
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.section {
+  background-color: #303960;
+  padding: 40px; }
+  .section__content {
+    background-color: #ea9a96; }
+
+.section-1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: #303960; }
