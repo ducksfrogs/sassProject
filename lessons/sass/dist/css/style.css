@@ -15,4 +15,18 @@
   display: flex;
   align-self: center;
   justify-content: center;
-  background-color: #303960; }
+  background-color: #303960;
+  padding: 50px;
+  margin-bottom: 10px; }
+  .section-1__content:last-child {
+    margin-left: 200px; }
+
+.section-2 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: #ea9a96;
+  padding: 50px;
+  margin-bottom: 10px; }
+  .section-2__content:last-child {
+    margin-left: 200px; }

@@ -3,4 +3,24 @@
     align-self: center;
     justify-content: center;
     background-color: color(color-primary);
+    padding: 50px;
+    margin-bottom: 10px;
+
+    &__content:last-child{
+        margin-left: 200px;
+
+    }
+}
+.section-2{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: color(color-secondary);
+    padding: 50px;
+    margin-bottom: 10px;
+
+    &__content:last-child{
+        margin-left: 200px;
+
+    }
 }
