@@ -6,27 +6,22 @@
     flex-direction: $direction;
 }
 
-
 .section-1{
     background-color: color(color-primary);
     margin-bottom: 10px;
 
     @include section-styling(row);
-
     &__content:last-child{
         margin-left: 200px;
-
     }
 }
 
 .section-2{
     background-color: color(color-tertiary);
     @include section-styling(column);
-
 }
 
 // mixin2
-
 
 $bpDesktop: 1000px;
 @mixin media-desktop{
