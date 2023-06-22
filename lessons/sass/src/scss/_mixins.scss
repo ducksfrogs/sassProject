@@ -1,7 +1,7 @@
 @mixin section-styling($direction){
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     padding: 50px;
     flex-direction: $direction;
 }
@@ -31,9 +31,9 @@ $bpDesktop: 1000px;
 }
 
 .section-1{
-    @include media-desktop(){
+    @include media-desktop{
         flex-direction: column;
-        &__content:last-child {
+        &__content:last-child{
             margin-left: 0;
         }
     }
