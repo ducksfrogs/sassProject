@@ -5,33 +5,13 @@
   margin: 0;
   box-sizing: border-box; }
 
-.section {
-  background-color: #303960;
-  padding: 40px; }
-  .section__content {
-    background-color: #ea9a96; }
-
 .section-1 {
-  background-color: #303960;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 50px;
-  flex-direction: row; }
-  .section-1__content:last-child {
-    margin-left: 200px; }
+  background-color: #303960; }
+  .section-1__content {
+    padding: 2opx;
+    color: #fff; }
 
-.section-2 {
-  background-color: #f8b24f;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 50px;
-  flex-direction: column; }
-
-@media screen and (max-width: 1000px) {
-  .section-1 {
-    flex-direction: column; }
-    .section-1__content:last-child {
-      margin-left: 0; } }
+.section-1__content--title {
+  margin: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px; }
