@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.section-1 {
+  background-color: #303960; }
+  .section-1__content {
+    padding: 20px;
+    color: #fff; }
+
+.section-1__content--title, .section-1__content--para {
+  margin: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px; }

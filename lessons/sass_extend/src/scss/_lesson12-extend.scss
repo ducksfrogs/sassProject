@@ -1,0 +1,21 @@
+.section-1 {
+    background-color: color(color-primary);
+
+    &__content{
+        padding: 20px;
+        color: color(color-white);
+        
+        &--title{
+            @extend %text-styling;
+        }
+        &--para{
+            @extend %text-styling;
+        }
+    }
+}
+
+%text-styling {
+    margin: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
