@@ -5,30 +5,53 @@ section{
     }
 }
 
-section{
-    .p1 {
-        background-image: url("../../dist/img/img_1.jpg");
+// section{
+//     .p1 {
+//         background-image: url("../../dist/img/img_1.jpg");
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+
+//     .p2{
+//         background-image: url('../../dist/img/img_2.jpg');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+//     .p3{
+//         background-image: url('../../dist/img/img_3.jpg');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+//     .p4{
+//         background-image: url('../../dist/img/img_4.jpg');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+// }
+
+// $bg-pics: (img_1, img_2, img_3, img_4);
+
+// @each $bg-divs in $bg-pics {
+//     .#{$bg-divs} {
+//         background-image: url("../../dist/img/#{$bg-divs}.jpg");
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+// }
+
+// Method -2 => the
+
+@each $bg-divs in (img_1, img_2, img_3, img_4){
+    .#{$bg-divs} {
+        background-image: url("../../dist/img/#{$bg-divs}.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        
     }
 
-    .p2{
-        background-image: url('../../dist/img/img_2.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .p3{
-        background-image: url('../../dist/img/img_3.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .p4{
-        background-image: url('../../dist/img/img_4.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
 }

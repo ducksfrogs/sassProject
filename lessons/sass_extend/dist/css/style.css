@@ -9,26 +9,22 @@ section div {
   height: 50rem;
   width: 50rem; }
 
-section .p1 {
+.img_1 {
   background-image: url("../../dist/img/img_1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
 
-section .p2 {
+.img_2 {
   background-image: url("../../dist/img/img_2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
 
-section .p3 {
+.img_3 {
   background-image: url("../../dist/img/img_3.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
 
-section .p4 {
+.img_4 {
   background-image: url("../../dist/img/img_4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
