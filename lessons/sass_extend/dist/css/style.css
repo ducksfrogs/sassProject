@@ -5,13 +5,30 @@
   margin: 0;
   box-sizing: border-box; }
 
-.section-1 {
-  background-color: #303960; }
-  .section-1__content {
-    padding: 20px;
-    color: #fff; }
+section div {
+  height: 50rem;
+  width: 50rem; }
 
-.section-1__content--title, .section-1__content--para {
-  margin: 15px 0;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 2px; }
+section .p1 {
+  background-image: url("../../dist/img/img_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+section .p2 {
+  background-image: url("../../dist/img/img_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+section .p3 {
+  background-image: url("../../dist/img/img_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+section .p4 {
+  background-image: url("../../dist/img/img_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
