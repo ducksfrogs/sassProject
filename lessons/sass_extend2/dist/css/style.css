@@ -4,3 +4,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+.gallery div[class^="img_"] {
+  height: 30rem;
+  width: 30rem; }
+
+.img_1 {
+  background-image: url("../../dist/img/img-1.jpg"); }
+
+.img_2 {
+  background-image: url("../../dist/img/img-2.jpg"); }
+
+.img_3 {
+  background-image: url("../../dist/img/img-3.jpg"); }
+
+.img_4 {
+  background-image: url("../../dist/img/img-4.jpg"); }
+
+.img_5 {
+  background-image: url("../../dist/img/img-5.jpg"); }

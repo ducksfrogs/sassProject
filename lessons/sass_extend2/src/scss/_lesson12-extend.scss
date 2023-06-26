@@ -1,0 +1,33 @@
+// @mixin section($size) {
+//     width: $size;
+//     height: $size;
+
+//     @if $size < 200px {
+//         background-color: color(color-primary);
+//     } @else if ($size == 250px) {
+//         background-color: color(color-secondary);
+//     } @else {
+//         background-color: color(color-tertiary);
+//     }
+// }
+
+// section{
+//     @include section(250px);
+// }
+
+
+.gallery{
+    div[class^="img_"] {
+        height:30rem;
+        width: 30rem;
+
+    }
+}
+
+@for $img from 1 through 5 {
+    .img_#{$img} {
+        background-image: url('../../dist/img/img-#{$img}.jpg');
+    }
+}
+
+
