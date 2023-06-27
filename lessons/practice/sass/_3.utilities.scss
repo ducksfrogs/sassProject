@@ -1,0 +1,19 @@
+:root {
+    font-size:62.5%;
+}
+
+body {
+    font-family: "Robot", sans-serif;
+    line-height: 1.9;
+    background-color: var(--color-primary);
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns:  [container-start] 1fr [center-start] 
+                            repeat(6, [col-start] minmax(0, 16.6666rem) [col-end])
+                            [center-end]  1fr [container-end];
+    grid-template-rows: min-content 100vh repeat(9, min-content);
+
+}
