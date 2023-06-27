@@ -57,12 +57,32 @@ body {
   grid-column: container-start / container-end;
   height: 300px; }
 
-.motto {
-  background-color: var(--color-primary);
-  grid-column: center-start / center-end;
+.features {
+  background-color: var(--color-secondary);
+  grid-column: container-start / container-end;
   height: 30vh; }
 
-.traines {
+.trainers {
+  background-color: var(--color-tertiary);
+  grid-column: center-start / center-end;
+  height: 600px; }
+
+.testimonials {
+  background-color: var(--color-quaternary);
+  grid-column: container-start / container-end;
+  height: 600px; }
+
+.clients {
   background-color: var(--color-secondary);
-  grid-column: col-start / col-end;
-  height: 30vh; }
+  grid-column: container-start / container-end;
+  height: 600px; }
+
+.register {
+  background-color: var(--color-secondary-m);
+  grid-column: container-start / container-end;
+  height: 600px; }
+
+.footer {
+  background-color: var(--color-tertiary);
+  grid-column: container-start / container-end;
+  height: 600px; }
