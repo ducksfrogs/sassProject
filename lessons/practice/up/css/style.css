@@ -56,3 +56,13 @@ body {
   background-color: var(--color-quaternary);
   grid-column: container-start / container-end;
   height: 300px; }
+
+.motto {
+  background-color: var(--color-primary);
+  grid-column: center-start / center-end;
+  height: 30vh; }
+
+.traines {
+  background-color: var(--color-secondary);
+  grid-column: col-start / col-end;
+  height: 30vh; }
