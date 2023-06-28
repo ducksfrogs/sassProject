@@ -65,6 +65,17 @@ i {
     transform: rotate(45deg); }
   .header.open .header__memu--line::after {
     transform: rotate(-45deg); }
+  .header.open .header__memu--line::before,
+  .header.open .header__memu--line::after {
+    top: 0; }
+  .header__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-tertiary);
+    position: fixed;
+    opacity: 0;
+    display: none;
+    z-index: 10; }
 
 .showcase {
   background-color: var(--color-tertiary);
