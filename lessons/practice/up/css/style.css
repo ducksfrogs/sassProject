@@ -50,16 +50,21 @@ a:visited {
   text-decoration: none;
   color: var(--color-quinary);
   font-weight: 300;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  font-size: calc(1.2rem + 0,5vw); }
 
 i {
   color: var(--color-primary);
-  font-size: calc(1.5rem, + 2vw); }
+  font-size: calc(1.5rem + 2vw); }
 
 .header {
-  background-color: var(--color-secondary);
-  grid-column: container-start / container-end;
-  height: 600px; }
+  grid-column: container-start / container-end; }
+  .header.open .header__memu--line {
+    background-color: transparent; }
+  .header.open .header__memu--line::before {
+    transform: rotate(45deg); }
+  .header.open .header__memu--line::after {
+    transform: rotate(-45deg); }
 
 .showcase {
   background-color: var(--color-tertiary);

@@ -1,5 +1,16 @@
 .header{
-    background-color: var(--color-secondary);
     grid-column: container-start / container-end;
-    height: 600px;
+
+    // dynamic class
+    &.open .header__memu--line {
+        background-color: transparent;
+    }
+
+    &.open .header__memu--line::before {
+        transform: rotate(45deg);
+    }
+
+    &.open .header__memu--line::after {
+        transform: rotate(-45deg);
+    }
 }
