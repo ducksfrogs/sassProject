@@ -23,3 +23,27 @@ html[data-theme="dark"] {
   --color-quinary: white;
   --color-quinary-m: rgba(255, 255, 255, 0.5);
 }
+
+$font-weights: (
+  'font-weight-thin': 100,
+  'font-weight-light': 300,
+  'font-weight-regular': 400,
+  'font-weight-medium': 500,
+  'font-weight-bold': 600,
+);
+  
+@function font-weight($font-weight-style){
+  @return map-get($font-weights, $font-weight-style )
+}
+
+
+$font-sizes: (
+  'font-size-small': calc(1.2rem, + 0,5vw),
+  'font-size-regular': calc(1.5rem, + 1vw),
+  'font-size-medium': calc(1.5rem, + 2vw),
+  
+);
+
+@function font-size($font-size-style){
+  @return map-get($font-sizes, $font-size-style )
+}

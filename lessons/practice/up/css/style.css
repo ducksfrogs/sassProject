@@ -42,6 +42,20 @@ body {
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(0, 16.6666rem) [col-end]) [center-end] 1fr [container-end];
   grid-template-rows: min-content 100vh repeat(9, min-content); }
 
+li {
+  list-style: none; }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--color-quinary);
+  font-weight: 300;
+  letter-spacing: 0.2rem; }
+
+i {
+  color: var(--color-primary);
+  font-size: calc(1.5rem, + 2vw); }
+
 .header {
   background-color: var(--color-secondary);
   grid-column: container-start / container-end;
