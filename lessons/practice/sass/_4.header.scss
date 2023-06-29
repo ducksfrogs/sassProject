@@ -90,6 +90,25 @@
             &__item:nth-child(even){
                 animation: upwards 1s forwards;
             }
+
+            &__toggle-container {
+                display: flex;
+                align-items: center;
+
+                input[type='checkbox']{
+                    position: relative;
+                    width: 6rem;
+                    height: 3rem;
+                    -webkit-apperance: none;
+                    -moz-appearance: none;
+                    background-color: var(--color-quinary);
+                    border-radius: 2.5rem;
+                    box-shadow: inset 0 0 0.6rem 0.1rem rgb(158, 157, 157);
+                    transition: all 0.5s ease-in;
+                    
+                }
+            }
+            
         }
     }
 }
