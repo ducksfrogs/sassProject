@@ -82,6 +82,42 @@
 
                 }
             }
+
+            &__item:nth-child(odd){
+                animation: downwards 1s forwards;
+            }
+
+            &__item:nth-child(even){
+                animation: upwards 1s forwards;
+            }
+
         }
+    }
+}
+
+//Upwards:
+@keyframes upwards {
+    //starting point
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+   // ending point 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes downwards {
+    //starting point
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+   // ending point 
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

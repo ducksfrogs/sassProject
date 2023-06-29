@@ -51,7 +51,7 @@ a:visited {
   color: var(--color-quinary);
   font-weight: 300;
   letter-spacing: 0.2rem;
-  font-size: calc(1.2rem + 0,5vw); }
+  font-size: calc(1.2rem + 0.5vw); }
 
 i {
   color: var(--color-primary);
@@ -114,6 +114,26 @@ i {
         transform: rotateX(-90deg);
         transform-origin: top;
         padding: inherit; }
+      .header__nav--links__item:nth-child(odd) {
+        animation: downwards 1s forwards; }
+      .header__nav--links__item:nth-child(even) {
+        animation: upwards 1s forwards; }
+
+@keyframes upwards {
+  from {
+    transform: translateY(100%);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes downwards {
+  from {
+    transform: translateY(-100%);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
 
 .showcase {
   background-color: var(--color-tertiary);
