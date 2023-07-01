@@ -33,7 +33,7 @@ $font-weights: (
 );
   
 @function font-weight($font-weight-style){
-  @return map-get($font-weights, $font-weight-style )
+  @return map-get($font-weights, $font-weight-style );
 }
 
 
@@ -47,5 +47,14 @@ $font-sizes: (
 );
 
 @function font-size($font-size-style){
-  @return map-get($font-sizes, $font-size-style )
+  @return map-get($font-sizes, $font-size-style );
+}
+
+
+$break-points: (
+  "break-point-tablet": 800px,
+);
+
+@function break-point($break-point-limmit){
+  @return map-get($break-points,  $break-point-limmit);
 }
