@@ -1,9 +1,14 @@
+
+@mixin media-desktop {
+    @media screen and (min-width: break-point(break-point-desktop)){
+        @content;
+    }
+}
 //800 break point
 
 @mixin media-tablet {
     @media screen and (max-width: break-point(break-point-tablet)){
         @content;
-        
     }
 }
 

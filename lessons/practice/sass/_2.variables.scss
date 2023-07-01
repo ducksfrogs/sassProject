@@ -53,6 +53,8 @@ $font-sizes: (
 
 $break-points: (
   "break-point-tablet": 800px,
+  "break-point-desktop": 1300px,
+  
 );
 
 @function break-point($break-point-limmit){
