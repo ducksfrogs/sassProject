@@ -208,8 +208,8 @@ i {
         width: 4rem;
         position: fixed;
         top: 2rem;
+        right: 2rem;
         padding: 2.5re;
-        background-color: var(--color-primary);
         z-index: 20;
         cursor: pointer; }
         .header__menu--line, .header__menu--line::before, .header__menu--line::after {
