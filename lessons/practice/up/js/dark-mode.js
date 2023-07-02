@@ -3,6 +3,7 @@ let htmlElement = document.documentElement;
 
 checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
+    console.log('Check');
     smoothTrans();
     htmlElement.setAttribute("data-theme", "dark");
   } else {

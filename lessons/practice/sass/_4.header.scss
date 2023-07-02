@@ -162,7 +162,7 @@
 
     // 800 tablet
     @include media-tablet {
-        background-color: red;
+        // perspective: 70rem;
         &__nav {
             position: fixed;
             top: 0;
