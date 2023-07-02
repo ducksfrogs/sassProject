@@ -1,3 +1,6 @@
+::selection {
+  background-color: var(--color-primary); }
+
 *,
 *::before,
 *::after {
@@ -41,6 +44,9 @@ body {
   display: grid;
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(0, 16.6666rem) [col-end]) [center-end] 1fr [container-end];
   grid-template-rows: min-content 90vh repeat(9, min-content); }
+  @media screen and (max-width: 800px) {
+    .container {
+      grid-template-rows: min-content 100vh repeat(9, min-content); } }
 
 li {
   list-style: none; }
@@ -247,9 +253,28 @@ i {
     opacity: 1; } }
 
 .showcase {
-  background-color: var(--color-tertiary);
   grid-column: container-start / container-end;
-  height: 100vh; }
+  background-image: linear-gradient(var(--color-tertiary-m), var(--color-tertiary-m)), url("../img/showcase/showcase-bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .showcase__content {
+    display: flex;
+    flex-direction: column; }
+    .showcase__content--title {
+      text-align: center;
+      font-size: calc(1.5rem + 5vw);
+      font-weight: 300;
+      background-image: linear-gradient(135deg, var(--color-secondary), var(--color-quinary));
+      --webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase; }
+    .showcase__content--para {
+      font-size: calc(1.5rem + 1vw);
+      font-weight: 300;
+      color: var(--color-quinary);
+      margin-bottom: calc(1rem + 2vw); }
 
 .motto {
   background-color: var(--color-quaternary);
@@ -285,6 +310,14 @@ i {
   background-color: var(--color-tertiary);
   grid-column: container-start / container-end;
   height: 600px; }
+
+.showcase {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.showcase {
+  padding: 6vh 4vw; }
 
 html.transition,
 html.transition *,
