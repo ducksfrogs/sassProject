@@ -275,6 +275,27 @@ i {
       font-weight: 300;
       color: var(--color-quinary);
       margin-bottom: calc(1rem + 2vw); }
+    .showcase__content--links {
+      display: flex;
+      justify-content: center; }
+      .showcase__content--links a:link,
+      .showcase__content--links a:visited {
+        font-size: calc(1.2rem + 0.5vw);
+        padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+        text-transform: uppercase;
+        position: relative;
+        border-radius: 0.5rem;
+        z-index: 1;
+        transition: all 0.5s ease-in-out; }
+      .showcase__content--links a:first-child {
+        background-color: var(--color-tertiary);
+        border: 0.2rem solid var(--color-tertiary);
+        color: var(--color-quinary);
+        margin-right: calc(1rem + 2vw); }
+      .showcase__content--links a:last-child {
+        background-color: var(--color-secondary);
+        border: 0.2rem solid var(--color-secondary);
+        color: var(--color-quinary); }
 
 .motto {
   background-color: var(--color-quaternary);

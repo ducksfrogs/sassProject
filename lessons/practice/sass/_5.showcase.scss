@@ -31,5 +31,34 @@
             color: var(--color-quinary);
             margin-bottom: calc(1rem + 2vw);
         }
+
+        &--links {
+            display: flex;
+            justify-content:center;
+
+            a:link,
+            a:visited {
+                font-size:  font-size(font-size-small);
+                padding: calc(0.5rem + 1vh) calc(1rem + 1vw);
+                text-transform: uppercase;
+                position: relative;
+                border-radius: 0.5rem;
+                z-index: 1;
+                transition: all 0.5s ease-in-out;
+            }
+
+            a:first-child {
+                background-color: var(--color-tertiary);
+                border: 0.2rem solid var(--color-tertiary);
+                color: var(--color-quinary);
+                margin-right: calc(1rem + 2vw);
+            }
+
+            a:last-child {
+                background-color: var(--color-secondary);
+                border: 0.2rem solid var(--color-secondary);
+                color: var(--color-quinary);
+            }
+        }
     }
 }
