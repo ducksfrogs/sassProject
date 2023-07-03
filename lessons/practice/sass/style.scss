@@ -12,6 +12,19 @@
     }
 }
 
+@mixin media-medium {
+    @media screen and (max-width: break-point(break-point-medium)){
+        @content;
+    }
+}
+
+
+@mixin media-small {
+    @media screen and (max-width: break-point(break-point-small)){
+        @content;
+    }
+}
+
 ::selection {
     background-color: var(--color-primary);
 }
