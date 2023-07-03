@@ -287,15 +287,42 @@ i {
         border-radius: 0.5rem;
         z-index: 1;
         transition: all 0.5s ease-in-out; }
-      .showcase__content--links a:first-child {
+      .showcase__content--links a:link:first-child,
+      .showcase__content--links a:visited:first-child {
         background-color: var(--color-tertiary);
         border: 0.2rem solid var(--color-tertiary);
         color: var(--color-quinary);
         margin-right: calc(1rem + 2vw); }
-      .showcase__content--links a:last-child {
+      .showcase__content--links a:link:last-child,
+      .showcase__content--links a:visited:last-child {
         background-color: var(--color-secondary);
         border: 0.2rem solid var(--color-secondary);
         color: var(--color-quinary); }
+      .showcase__content--links a:link:first-child::before,
+      .showcase__content--links a:visited:first-child::before,
+      .showcase__content--links a:link:last-child::before,
+      .showcase__content--links a:visited:last-child::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--color-quinary);
+        z-index: -1;
+        transform: scale(0);
+        transition: all 0.5s ease-in-out; }
+      .showcase__content--links a:hover:first-child::before,
+      .showcase__content--links a:active:first-child::before,
+      .showcase__content--links a:hover:last-child::before,
+      .showcase__content--links a:active:last-child::before {
+        transform: scale(1); }
+      .showcase__content--links a:hover:first-child,
+      .showcase__content--links a:active:first-child {
+        color: var(--color-quinary); }
+      .showcase__content--links a:hover:last-child,
+      .showcase__content--links a:active:last-child {
+        color: var(--color-tertiary); }
 
 .motto {
   background-color: var(--color-quaternary);
