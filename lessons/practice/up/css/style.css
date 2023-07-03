@@ -353,7 +353,7 @@ i {
 .motto {
   background-color: var(--color-quaternary);
   grid-column: container-start / container-end;
-  height: 300px; }
+  background-image: url("../img/motto/motto-bg.jpg"); }
 
 .features {
   background-color: var(--color-secondary);
@@ -385,7 +385,7 @@ i {
   grid-column: container-start / container-end;
   height: 600px; }
 
-.showcase {
+.showcase, .motto {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
