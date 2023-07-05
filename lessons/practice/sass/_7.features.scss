@@ -10,6 +10,43 @@
         padding: 2rem 4rem;
         height: 40rem;
         align-items: center;
+
+        &--title {
+            @extend %sec-heading;
+            font-weight: font-weight(font-weight-bold) !important;
+            text-align: center;
+            position: relative;
+            align-self: end;
+            z-index: 1;
+        }
+
+        &--title::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--color-primary-m);
+            z-index: -1;
+            transform:  scaleX(0);
+            transition: transform 0.5s ease-in-out;
+            transform-origin: left;
+        }
+
+        &:hover &--title::before,
+        &:active &--title::before{
+            transform: scaleX(1);
+            text-align: left;
+        }
+
+        &--para{
+            @extend %sec-para;
+            font-weight: font-weight(font-weight-medium);
+            background-color: var(--color-primary-m);
+            padding: 1rem;
+            text-align: center;
+        }
     }
 
 }
