@@ -582,7 +582,8 @@ i {
       display: grid1;
       position: relative;
       height: 30rem;
-      width: 30rem; }
+      width: 30rem;
+      overflow: hidden; }
       .trainers__content--card__specialty, .trainers__content--card__name {
         position: absolute;
         bottom: 20%;
@@ -593,6 +594,27 @@ i {
         width: 100%;
         object-fit: cover;
         transition: all 0.5s ease-in-out; }
+    .trainers__content--card:hover .trainers__content--card__img,
+    .trainers__content--card:active .trainers__content--card__img {
+      filter: contrast(30%); }
+    .trainers__content--card:hover .trainers__content--card__specialty, .trainers__content--card:active.trainers__content--card__specialty,
+    .trainers__content--card:hover .trainers__content--card__name, .trainers__content--card:active.trainers__content--card__name {
+      animation: name 1.5s linear forwards;
+      z-index: 1; }
+
+@keyframes name {
+  0% {
+    transform: translate(-25rem, -15rem);
+    opacity: 0; }
+  30% {
+    transform: translate(8rem, -15rem);
+    opacity: 0.3; }
+  60% {
+    transform: translate(8rem, 0rem);
+    opacity: 0.6; }
+  0% {
+    transform: translate(0, 0);
+    opacity: 1; } }
 
 .testimonials {
   background-color: var(--color-quaternary);
