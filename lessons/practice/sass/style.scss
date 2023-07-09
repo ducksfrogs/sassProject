@@ -68,7 +68,8 @@
 }
 
 %sec-h3 {
-    font-size: font-size(--color-quinary);
+    font-size: font-size(font-size-small);
+    color: var(--color-quinary);
 }
 
 

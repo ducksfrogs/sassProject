@@ -582,8 +582,17 @@ i {
       display: grid1;
       position: relative;
       height: 30rem;
-      width: 30rem;
-      overflow: hidden; }
+      width: 30rem; }
+      .trainers__content--card__specialty, .trainers__content--card__name {
+        position: absolute;
+        bottom: 20%;
+        left: 5%;
+        transform: translate(-25rem, -25rem); }
+      .trainers__content--card__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out; }
 
 .testimonials {
   background-color: var(--color-quaternary);
@@ -624,6 +633,13 @@ i {
   color: var(--color-quinary);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 0.2rem; }
+
+.trainers__content--card__name {
+  font-size: calc(1.2rem + 0.5vw);
+  color: var(--color-quinary); }
+
+.trainers__content--card__specialty {
+  color: var(--color-quinary); }
 
 html.transition,
 html.transition *,

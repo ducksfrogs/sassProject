@@ -24,7 +24,28 @@
             position: relative;
             height: 30rem;
             width: 30rem;
-            overflow: hidden;
+            // overflow: hidden;
+            &__specialty,
+            &__name  {
+                position: absolute;
+                bottom: 20%;
+                left: 5%;
+                transform: translate(-25rem, -25rem);
+            }
+
+            &__specialty {
+             @extend %sec-h4;
+            }
+
+            &__name {
+              @extend  %sec-h3;
+            }
+            &__img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all 0.5s ease-in-out;
+            }
         }
     }
 }
