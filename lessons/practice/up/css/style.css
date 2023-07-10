@@ -582,13 +582,14 @@ i {
       display: grid1;
       position: relative;
       height: 30rem;
-      width: 30rem;
-      overflow: hidden; }
+      width: 30rem; }
       .trainers__content--card__specialty, .trainers__content--card__name {
         position: absolute;
         bottom: 20%;
         left: 5%;
-        transform: translate(-25rem, -25rem); }
+        transform: translate(-25rem, -15rem); }
+      .trainers__content--card__name {
+        bottom: 35%; }
       .trainers__content--card__img {
         height: 100%;
         width: 100%;
@@ -610,7 +611,7 @@ i {
     transform: translate(8rem, -15rem);
     opacity: 0.3; }
   60% {
-    transform: translate(8rem, 0rem);
+    transform: translate(8rem, 0);
     opacity: 0.6; }
   0% {
     transform: translate(0, 0);
@@ -618,8 +619,7 @@ i {
 
 .testimonials {
   background-color: var(--color-quaternary);
-  grid-column: container-start / container-end;
-  height: 600px; }
+  grid-column: container-start / container-end; }
 
 .clients {
   background-color: var(--color-secondary);
