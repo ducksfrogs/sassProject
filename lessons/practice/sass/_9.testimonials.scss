@@ -1,4 +1,30 @@
 .testimonials {
-    background-color: var(--color-quaternary);
+
     grid-column: container-start / container-end;
+
+    background-image: linear-gradient(var(--color-tertiary-m), 
+                                var(--color-tertiary-m)),
+                                url("../img/testimonials/testimonials-bg.jpg");
+
+    @extend %bg;
+    @extend %sec-padding;
+
+    &__title {
+        text-align: center;
+        @extend %sec-heading;
+        margin-bottom: 4vh;
+    }
+
+    &___content {
+        max-width: 100rem;
+        margin: 0 auto  ;
+
+        &--slider {
+            // display: none;
+
+            &--para {
+                @extend %sec-para;
+            }
+        }
+    }
 }

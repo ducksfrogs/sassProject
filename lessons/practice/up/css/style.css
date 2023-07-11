@@ -618,8 +618,14 @@ i {
     opacity: 1; } }
 
 .testimonials {
-  background-color: var(--color-quaternary);
-  grid-column: container-start / container-end; }
+  grid-column: container-start / container-end;
+  background-image: linear-gradient(var(--color-tertiary-m), var(--color-tertiary-m)), url("../img/testimonials/testimonials-bg.jpg"); }
+  .testimonials__title {
+    text-align: center;
+    margin-bottom: 4vh; }
+  .testimonials___content {
+    max-width: 100rem;
+    margin: 0 auto; }
 
 .clients {
   background-color: var(--color-secondary);
@@ -636,21 +642,21 @@ i {
   grid-column: container-start / container-end;
   height: 600px; }
 
-.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9) {
+.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
-.showcase, .motto, .trainers {
+.showcase, .motto, .trainers, .testimonials {
   padding: 6vh 4vw; }
 
-.motto__content--title, .features__content--title, .trainers__title {
+.motto__content--title, .features__content--title, .trainers__title, .testimonials__title {
   font-size: calc(1.5rem + 2vw);
   font-weight: font-weight-light;
   letter-spacing: 0.2rem;
   color: var(--color-quinary); }
 
-.motto__content--para, .features__content--para {
+.motto__content--para, .features__content--para, .testimonials___content--slider--para {
   font-size: calc(1.2rem + 0.5vw);
   color: var(--color-quinary);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
