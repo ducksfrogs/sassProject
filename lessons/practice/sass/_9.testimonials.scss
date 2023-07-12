@@ -15,16 +15,26 @@
         margin-bottom: 4vh;
     }
 
-    &___content {
+    &__content {
         max-width: 100rem;
         margin: 0 auto  ;
 
         &--slider {
-            // display: none;
+            border: 0.1rem solid var(--color-primary);
+            max-width: 60rem;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2vh 1vw;
 
-            &--para {
-                @extend %sec-para;
+            &__slide {
+
+            // display: none;
+                &--para {
+                    @extend %sec-para;
+                    margin-bottom: 2rem;
+                }
             }
+
         }
     }
 }

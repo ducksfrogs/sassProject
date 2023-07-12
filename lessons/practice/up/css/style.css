@@ -623,9 +623,17 @@ i {
   .testimonials__title {
     text-align: center;
     margin-bottom: 4vh; }
-  .testimonials___content {
+  .testimonials__content {
     max-width: 100rem;
     margin: 0 auto; }
+    .testimonials__content--slider {
+      border: 0.1rem solid var(--color-primary);
+      max-width: 60rem;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2vh 1vw; }
+      .testimonials__content--slider__slide--para {
+        margin-bottom: 2rem; }
 
 .clients {
   background-color: var(--color-secondary);
@@ -656,7 +664,7 @@ i {
   letter-spacing: 0.2rem;
   color: var(--color-quinary); }
 
-.motto__content--para, .features__content--para, .testimonials___content--slider--para {
+.motto__content--para, .features__content--para, .testimonials__content--slider__slide--para {
   font-size: calc(1.2rem + 0.5vw);
   color: var(--color-quinary);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
