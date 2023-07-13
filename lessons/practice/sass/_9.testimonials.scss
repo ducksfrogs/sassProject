@@ -79,3 +79,16 @@
         }
     }
 }
+
+@keyframes slide {
+    0% {
+        transform: translate(-2rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
