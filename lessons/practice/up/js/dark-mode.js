@@ -18,4 +18,3 @@ let smoothTrans = () => {
     htmlElement.classList.remove("transition");
   }, 1000);
 };
-x
