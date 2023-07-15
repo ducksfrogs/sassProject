@@ -661,10 +661,55 @@ i {
       height: calc(7rem + 5vw);
       width: calc(7rem + 5vw); } }
 
+@keyframes slide {
+  0% {
+    transform: translate(-2rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .clients {
   background-color: var(--color-secondary);
   grid-column: container-start / container-end;
-  height: 600px; }
+  background-image: linear-gradient(var(--color-quaternary-m), var(--color-quaternary-m)), url("../img/clients/clients-bg.jpg");
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .clients__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500 !important;
+    position: relative;
+    align-self: center;
+    padding: 1rem; }
+  .clients__title::before, .clients__title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: var(--color-secondary);
+    height: 100%;
+    width: 0.2rem;
+    transition: all 0.2s; }
+  .clients__title::before {
+    left: 0; }
+  .clients__title::after {
+    right: 0; }
+  .clients__title:hover::before, .clients__title:active::before, .clients__title:hover::after, .clients__title:active::after {
+    height: 0.2rem;
+    width: 100%; }
+  .clients__title:hover::after, .clients__title:active::after {
+    top: 100%; }
+  .clients__content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .clients__content--img {
+      background-color: var(--color-quinary-m);
+      width: 20rem;
+      margin: 2rem;
+      border-radius: 2rem;
+      padding: 2rem; }
 
 .register {
   background-color: var(--color-secondary-m);
@@ -676,15 +721,15 @@ i {
   grid-column: container-start / container-end;
   height: 600px; }
 
-.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials {
+.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
-.showcase, .motto, .trainers, .testimonials {
+.showcase, .motto, .trainers, .testimonials, .clients {
   padding: 6vh 4vw; }
 
-.motto__content--title, .features__content--title, .trainers__title, .testimonials__title {
+.motto__content--title, .features__content--title, .trainers__title, .testimonials__title, .clients__title {
   font-size: calc(1.5rem + 2vw);
   font-weight: font-weight-light;
   letter-spacing: 0.2rem;
