@@ -77,6 +77,27 @@
     color: var(--color-quinary);
 }
 
+.scroll {
+    position: fixed;
+    bottom: 5rem;
+    right: 4rem;
+    height: 4rem;
+    width: 4rem;
+
+    background-image: url("../img/scroll/scroll.svg");
+    background-repeat: no-repeat;
+    background-color: var(--color-secondary-m);
+    background-position: contain;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 50%;
+    z-index: 30;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+
+}
 html.transition,
 html.transition *,
 html.transition *::before,
