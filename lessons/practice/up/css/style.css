@@ -690,7 +690,7 @@ i {
     background-color: var(--color-secondary);
     height: 100%;
     width: 0.2rem;
-    transition: all 0.2s; }
+    transition: all 1.2s; }
   .clients__title::before {
     left: 0; }
   .clients__title::after {
@@ -709,7 +709,12 @@ i {
       width: 20rem;
       margin: 2rem;
       border-radius: 2rem;
-      padding: 2rem; }
+      padding: 2rem;
+      transition: transform 0.5s ease-in-out; }
+      .clients__content--img img {
+        width: 100%; }
+    .clients__content--img:hover, .clients__content--img:active {
+      transform: scale(1.2); }
 
 .register {
   background-color: var(--color-secondary-m);
