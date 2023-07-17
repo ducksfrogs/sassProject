@@ -719,19 +719,32 @@ i {
 .register {
   background-color: var(--color-secondary-m);
   grid-column: container-start / container-end;
-  height: 600px; }
+  background-image: url("../img/register/register-bg.jpg");
+  color: var(--color-quinary);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  justify-content: center; }
+  .register__progress {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 2rem; }
+    .register__progress--step {
+      font-size: 2rem;
+      background-color: var(--color-tertiary-m); }
 
 .footer {
   background-color: var(--color-tertiary);
   grid-column: container-start / container-end;
   height: 600px; }
 
-.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients {
+.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients, .register {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
-.showcase, .motto, .trainers, .testimonials, .clients {
+.showcase, .motto, .trainers, .testimonials, .clients, .register {
   padding: 6vh 4vw; }
 
 .motto__content--title, .features__content--title, .trainers__title, .testimonials__title, .clients__title {
