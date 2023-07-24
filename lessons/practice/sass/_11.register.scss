@@ -9,7 +9,7 @@
     min-height: 80vh;
 
     display: flex;
-    flex-direction: columns;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -21,6 +21,77 @@
         &--step {
             font-size: 2rem;
             background-color: var(--color-tertiary-m);
+            padding: 1rem;
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            transition: all 0.5s ease-in-out ;
+
+            i {
+                font-size: font-size(font-size-small);
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            i.active {
+                display: block;
+            }
+            span.active {
+                display: none;
+            }
+        }
+
+        &--step.active {
+            background-color: var(--color-quinary);
+        }
+
+    }
+
+    &__content {
+        width: 28rem;
+    margin-top: 2rem;
+    // overflow: hidden;
+        &--form {
+            display: flex;
+            justify-content: center;
+            width: 400%;
+
+            &__page {
+                width: 50%;
+                display: grid;
+                grid-template-rows: repeat(3, 7rem) ;
+                grid-row-gap: 4rem;
+                align-items: start;
+                transition: margin 0.5s ease-in-out;
+
+                &--field {
+                    height: 4rem;
+                    width: 28rem;
+
+                    label {
+                        font-size: 2rem;
+                    }
+
+                    input,
+                    select {
+                        height: 100%;
+                        width: 100%;
+                        font-size: 1.5rem;
+                        padding-left: 1rem;
+                        border: none;
+                        outline: none;
+                        background-color: var(--color-quinary-m);
+                        color: var(--color-quinary);
+                    }
+                }
+
+
+            }
         }
     }
 
