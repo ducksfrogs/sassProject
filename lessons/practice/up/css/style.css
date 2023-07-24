@@ -781,7 +781,13 @@ i {
             border: none;
             outline: none;
             background-color: var(--color-quinary-m);
-            color: var(--color-quinary); }
+            color: var(--color-quinary);
+            letter-spacing: 0.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+          .register__content--form__page--field select {
+            color: black; }
+          .register__content--form__page--field input:focus {
+            background-color: var(--color-secondary-m); }
 
 .footer {
   background-color: var(--color-tertiary);

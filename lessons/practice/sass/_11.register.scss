@@ -87,6 +87,16 @@
                         outline: none;
                         background-color: var(--color-quinary-m);
                         color: var(--color-quinary);
+                        letter-spacing: 0.2rem;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+
+                    select {
+                        color: black;
+                    }
+
+                    input:focus {
+                        background-color: var(--color-secondary-m);
                     }
                 }
 
