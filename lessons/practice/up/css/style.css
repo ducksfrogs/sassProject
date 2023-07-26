@@ -782,8 +782,7 @@ i {
             outline: none;
             background-color: var(--color-quinary-m);
             color: var(--color-quinary);
-            letter-spacing: 0.2rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+            letter-spacing: 0.2rem; }
           .register__content--form__page--field select {
             color: black; }
           .register__content--form__page--field input:focus {
@@ -804,8 +803,10 @@ i {
             background-color: var(--color-primary); }
         .register__content--form__page .btns {
           display: flex; }
-          .register__content--form__page .btns button {
-            margin-right: 1rem; }
+          .register__content--form__page .btns button:first-child {
+            margin-right: 0.5rem; }
+          .register__content--form__page .btns button:last-child {
+            margin-left: 0.5rem; }
 
 .footer {
   background-color: var(--color-tertiary);

@@ -88,7 +88,7 @@
                         background-color: var(--color-quinary-m);
                         color: var(--color-quinary);
                         letter-spacing: 0.2rem;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     }
 
                     select {
@@ -121,8 +121,12 @@
                 .btns {
                     display: flex;
 
-                    button{
-                        margin-right: 1rem;
+                    button:first-child{
+                        margin-right: 0.5rem;
+                    }
+
+                    button:last-child{
+                        margin-left: 0.5rem;
                     }
                 }
 
