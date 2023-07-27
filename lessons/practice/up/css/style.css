@@ -755,7 +755,8 @@ i {
       background-color: var(--color-quinary); }
   .register__content {
     width: 28rem;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    overflow: hidden; }
     .register__content--form {
       display: flex;
       justify-content: center;
