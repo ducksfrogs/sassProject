@@ -810,16 +810,34 @@ i {
             margin-left: 0.5rem; }
 
 .footer {
-  background-color: var(--color-tertiary);
   grid-column: container-start / container-end;
-  height: 600px; }
+  background-image: linear-gradient(var(--color-tertiary-m), var(--color-tertiary-m)), url("../img/footer/footer-bg.jpg");
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-gap: 8vh; }
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem); }
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer__logo img {
+      height: 5rem;
+      width: 5rem; }
+    .footer__logo span {
+      font-size: 2.5rem;
+      color: var(--color-quinary);
+      margin-left: 0.5rem;
+      letter-spacing: 0.3rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow'; }
 
-.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients, .register {
+.showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients, .register, .footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
-.showcase, .motto, .trainers, .testimonials, .clients, .register {
+.showcase, .motto, .trainers, .testimonials, .clients, .register, .footer {
   padding: 6vh 4vw; }
 
 .motto__content--title, .features__content--title, .trainers__title, .testimonials__title, .clients__title {
