@@ -14,6 +14,32 @@
     &__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, 25rem);
+        place-content: center;
+        grid-gap: 10rem 4vw;
+
+        &--section{
+
+            &__title{
+                @extend %sec-h3;
+            }
+
+            &__link:link,
+            &__link:visited{
+                display: block;
+                letter-spacing: initial;
+                color: red;
+            }
+
+            &__para {
+                color: var(--color-quinary);
+                font-weight: font-weight(font-weight-light);
+                font-size: font-size(font-size-small);
+            }
+        }
+
+
+        
+
     }
 
     &__logo {

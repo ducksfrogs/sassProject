@@ -817,7 +817,17 @@ i {
   grid-gap: 8vh; }
   .footer__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 25rem); }
+    grid-template-columns: repeat(auto-fit, 25rem);
+    place-content: center;
+    grid-gap: 10rem 4vw; }
+    .footer__content--section__link:link, .footer__content--section__link:visited {
+      display: block;
+      letter-spacing: initial;
+      color: red; }
+    .footer__content--section__para {
+      color: var(--color-quinary);
+      font-weight: 300;
+      font-size: calc(1.2rem + 0.5vw); }
   .footer__logo {
     display: flex;
     align-items: center;
@@ -852,7 +862,7 @@ i {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 0.2rem; }
 
-.trainers__content--card__name, .testimonials__content--slider__slide--title {
+.trainers__content--card__name, .testimonials__content--slider__slide--title, .footer__content--section__title {
   font-size: calc(1.2rem + 0.5vw);
   color: var(--color-quinary); }
 
