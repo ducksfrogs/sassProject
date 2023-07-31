@@ -828,6 +828,8 @@ i {
       color: var(--color-quinary);
       font-weight: 300;
       font-size: calc(1.2rem + 0.5vw); }
+    .footer__content--section:first-child, .footer__content--section:nth-child(2), .footer__content--section:nth-child(3) {
+      border-right: 0.1rem solid var(--color-quinary); }
   .footer__logo {
     display: flex;
     align-items: center;

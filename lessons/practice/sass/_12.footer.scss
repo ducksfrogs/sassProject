@@ -37,6 +37,11 @@
             }
         }
 
+        &--section:first-child,
+        &--section:nth-child(2),
+        &--section:nth-child(3){
+            border-right: 0.1rem solid var(--color-quinary);
+        }
 
         
 
