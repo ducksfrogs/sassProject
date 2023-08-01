@@ -830,6 +830,24 @@ i {
       font-size: calc(1.2rem + 0.5vw); }
     .footer__content--section:first-child, .footer__content--section:nth-child(2), .footer__content--section:nth-child(3) {
       border-right: 0.1rem solid var(--color-quinary); }
+    .footer__content--section:nth-child(3) {
+      padding-right: 4vw; }
+      .footer__content--section:nth-child(3) input[type=email] {
+        padding: 1rem;
+        background-color: transparent;
+        color: var(--color-quinary);
+        border: 0.1rem solid var(--color-quinary);
+        border-bottom: none;
+        border-right: none; }
+      .footer__content--section:nth-child(3) input[type=submit] {
+        background-color: transparent;
+        border: none;
+        color: var(--color-quinary);
+        font-size: 1.5rem;
+        border: 0.1rem solid var(--color-quinary);
+        padding: 0.85rem 1.5rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out; }
   .footer__logo {
     display: flex;
     align-items: center;
