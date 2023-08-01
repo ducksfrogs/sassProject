@@ -814,7 +814,7 @@ i {
   background-image: linear-gradient(var(--color-tertiary-m), var(--color-tertiary-m)), url("../img/footer/footer-bg.jpg");
   display: grid;
   grid-template-rows: repeat(3, max-content);
-  grid-gap: 8vh; }
+  grid-row-gap: 8vh; }
   .footer__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 25rem);
@@ -848,6 +848,13 @@ i {
         padding: 0.85rem 1.5rem;
         cursor: pointer;
         transition: all 0.5s ease-in-out; }
+      .footer__content--section:nth-child(3) input[type=submit]:hover,
+      .footer__content--section:nth-child(3) input[type=submit]:active {
+        background-color: var(--color-quinary);
+        color: black; }
+    .footer__content--section:last-child {
+      padding-bottom: 4vw;
+      border-bottom: 0.1rem solid var(--color-quinary); }
   .footer__logo {
     display: flex;
     align-items: center;
