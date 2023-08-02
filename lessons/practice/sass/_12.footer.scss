@@ -99,4 +99,47 @@
         }
     }
 
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &--call {
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+
+            p,
+            i {
+                display: inline-block;
+            }
+
+            i {
+                font-size: 3rem;
+            }
+
+            p {
+                margin-left: 1rem;
+                @extend .footer__content--section__para;
+            }
+        }
+
+        &--icons {
+            display: flex;
+
+            &__link:link,
+            &__link:visited{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: calc(0.5rem + 2vw);
+                height: 3rem;
+                width: 3rem;
+                border: 0.1rem solid var(--color-quinary);
+                padding: 3.5rem;
+                border-radius: 50%;
+            }
+        }
+
+    }
+
 }

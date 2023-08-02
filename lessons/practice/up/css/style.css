@@ -824,7 +824,7 @@ i {
       display: block;
       letter-spacing: initial;
       color: red; }
-    .footer__content--section__para {
+    .footer__content--section__para, .footer__social--call p {
       color: var(--color-quinary);
       font-weight: 300;
       font-size: calc(1.2rem + 0.5vw); }
@@ -868,6 +868,32 @@ i {
       margin-left: 0.5rem;
       letter-spacing: 0.3rem;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow'; }
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .footer__social--call {
+      margin-right: 2rem;
+      margin-bottom: 2rem; }
+      .footer__social--call p,
+      .footer__social--call i {
+        display: inline-block; }
+      .footer__social--call i {
+        font-size: 3rem; }
+      .footer__social--call p {
+        margin-left: 1rem; }
+    .footer__social--icons {
+      display: flex; }
+      .footer__social--icons__link:link, .footer__social--icons__link:visited {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: calc(0.5rem + 2vw);
+        height: 3rem;
+        width: 3rem;
+        border: 0.1rem solid var(--color-quinary);
+        padding: 3.5rem;
+        border-radius: 50%; }
 
 .showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients, .register, .footer {
   background-size: cover;
