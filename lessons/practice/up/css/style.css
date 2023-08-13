@@ -892,8 +892,24 @@ i {
         height: 3rem;
         width: 3rem;
         border: 0.1rem solid var(--color-quinary);
-        padding: 3.5rem;
-        border-radius: 50%; }
+        padding: 2.5rem;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1; }
+        .footer__social--icons__link:link i, .footer__social--icons__link:visited i {
+          font-size: 3rem; }
+      .footer__social--icons__link:link::before, .footer__social--icons__link:visited::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: var(--color-quinary);
+        border-radius: inherit;
+        z-index: -1;
+        transform: scale(0);
+        transition: transform 0.5s ease-in-out; }
+      .footer__social--icons__link:hover::before, .footer__social--icons__link:active::before {
+        transform: scale(1); }
 
 .showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients, .register, .footer {
   background-size: cover;
