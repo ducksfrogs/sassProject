@@ -155,7 +155,7 @@
                 border-radius: inherit;
                 z-index: -1;
                 transform: scale(0);
-                transition: transform 0.5s ease-in-out;
+                transition: transform 0.5s ease;
 
             }
 
@@ -167,6 +167,15 @@
 
         }
 
+
+
     }
+        // 600px Mark Break point
+
+        @include media-medium {
+            &__social{
+                justify-content: center;
+            }
+        }
 
 }

@@ -907,9 +907,12 @@ i {
         border-radius: inherit;
         z-index: -1;
         transform: scale(0);
-        transition: transform 0.5s ease-in-out; }
+        transition: transform 0.5s ease; }
       .footer__social--icons__link:hover::before, .footer__social--icons__link:active::before {
         transform: scale(1); }
+  @media screen and (max-width: 600px) {
+    .footer__social {
+      justify-content: center; } }
 
 .showcase, .motto, .features__content:nth-child(1), .features__content:nth-child(2), .features__content:nth-child(3), .features__content:nth-child(4), .features__content:nth-child(5), .features__content:nth-child(6), .features__content:nth-child(7), .features__content:nth-child(8), .features__content:nth-child(9), .testimonials, .clients, .register, .footer {
   background-size: cover;
