@@ -1,0 +1,107 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin media-desktop {
+    @media screen and (min-width: break-point(break-point-desktop)){
+        @content;
+    }
+}
+//800 break point
+
+@mixin media-tablet {
+    @media screen and (max-width: break-point(break-point-tablet)){
+        @content;
+    }
+}
+
+@mixin media-medium {
+    @media screen and (max-width: break-point(break-point-medium)){
+        @content;
+    }
+}
+
+
+@mixin media-small {
+    @media screen and (max-width: break-point(break-point-small)){
+        @content;
+    }
+}
+
+
+%bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+%sec-padding {
+    padding:6vh 4vw;
+} 
+
+%sec-heading {
+    font-size: font-size(font-size-medium);
+    font-weight: font-weight-light;
+    letter-spacing: 0.2rem;
+    color: var(--color-quinary);
+}
+
+%sec-para {
+    font-size: font-size(font-size-small);
+    color: var(--color-quinary);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.2rem;
+}
+
+%sec-h3 {
+    font-size: font-size(font-size-small);
+    color: var(--color-quinary);
+}
+
+
+%sec-h4 {
+    color: var(--color-quinary);
+}
+
+.scroll {
+    position: fixed;
+    bottom: 70rem;
+    right: 4rem;
+    height: 4rem;
+    width: 4rem;
+
+    background-image: url("../img/scroll/scroll.svg");
+    background-repeat: no-repeat;
+    background-color: var(--color-secondary-m);
+    background-position: contain;
+    // background-position: center;
+    padding: 1rem;
+    border-radius: 50%;
+    z-index: 30;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+
+.scroll.active {
+    visibility: inherit;
+    opacity: 1;
+    bottom: 4rem;
+}
+
+
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+    transition: all 0.5s !important;
+    transition-delay: 0 !important;
+}
