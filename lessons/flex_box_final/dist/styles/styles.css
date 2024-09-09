@@ -15,9 +15,28 @@ body {
   color: #605D48;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
-  line-height: 50px;
+  line-height: 30px;
 }
 
 .sidebar {
   background-color: #c69963;
+}
+
+.header {
+  background-color: #54483A;
+}
+
+.realtors {
+  background-color: #101d2c;
+}
+
+.features {
+  background-color: #B28451;
+}
+
+.story__pictures {
+  background-color: #c69963;
+}
+.story__content {
+  background-color: #aaa;
 }
