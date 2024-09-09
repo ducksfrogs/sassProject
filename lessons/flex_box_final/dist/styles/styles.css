@@ -15,11 +15,23 @@ body {
   color: #605D48;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [co--end]) [center-end] 1fr [full-end];
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}
+.container > * {
+  font-size: 3rem;
+  padding: 40px;
 }
 
 .sidebar {
   background-color: #c69963;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
 }
 
 .header {
@@ -32,6 +44,7 @@ body {
 
 .features {
   background-color: #B28451;
+  grid-column: center-start/center-end;
 }
 
 .story__pictures {
@@ -39,4 +52,14 @@ body {
 }
 .story__content {
   background-color: #aaa;
+}
+
+.gallery {
+  background-color: #54483A;
+  grid-column: full-start/full-end;
+}
+
+.footer {
+  background-color: #101d2c;
+  grid-column: full-start/full-end;
 }
